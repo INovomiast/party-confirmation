@@ -111,3 +111,23 @@ body {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
+.download_inv_file {
+    transform: translateY(-70px);
+    width: 40%;
+    height: 50px;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    border-radius: 12px;
+    border: 2px solid rgb(0, 204, 255);
+    background-color: rgb(0, 159, 199);
+    transition: all 0.5s;
+    color: white;
+}
+
+.download_inv_file:hover {
+    background-color: #52baff;
+    color: rgb(0, 0, 0);
+    user-select: none;
+    cursor: pointer;
+}
