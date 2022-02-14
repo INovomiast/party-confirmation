@@ -17,7 +17,6 @@ const loading_spinner = document.getElementById('loading_spinner');
 const finish_div = document.getElementById('finish_btn_div');
 
 //Download Invitation
-const download_btn = document.getElementById('');
 const download_files = ['https://inovomiast.000webhostapp.com/user/inovomiast/cdn/private/invitaciones/Invitacion%20-%20Ruben%20-%20Cumplea%c3%b1os%20Dimitri.pdf', 'https://inovomiast.000webhostapp.com/user/inovomiast/cdn/private/invitaciones/Invitacion%20-%20Raquel%20-%20Cumplea%c3%b1os%20Dimitri.pdf', 'https://inovomiast.000webhostapp.com/user/inovomiast/cdn/private/invitaciones/Invitaci%c3%b3n%20-%20Borys%20-%20Cumplea%c3%b1os%20Dimitri.pdf', 'https://inovomiast.000webhostapp.com/user/inovomiast/cdn/private/invitaciones/Invitaci%c3%b3n%20-%20Alejandro%20Pino%20-%20Cumplea%c3%b1os%20Dimitri.pdf']
 const download_file_link = document.getElementById('download_file_link');
 
@@ -33,13 +32,10 @@ submit_btn.addEventListener('click', () => {
         }, 2000);
     }if (phone_list.includes(phone_input.value)) {
         window.location.href = "./index.html?user-phone=" + phone_input.value;
-    }if (!phone_list.includes(phone_input.value)) {
-        alert('Phone is not on the list!');
     }
 });
 
 //URL Gestion
-
 
 //Ruben
 if (user_phone == phone_list[0]) {
@@ -57,7 +53,7 @@ if (user_phone == phone_list[0]) {
 }
 
 //Raquel
-if (user_phone == phone_list[1]) {
+else if (user_phone == phone_list[1]) {
     //===================================//
       submit_btn.style.display = 'none';
       phone_input.style.display = 'none';
@@ -73,7 +69,23 @@ if (user_phone == phone_list[1]) {
 }
 
 //Borys
-if (user_phone == phone_list[3]) {
+else if (user_phone == phone_list[2]) {
+  //===================================//
+    submit_btn.style.display = 'none';
+    phone_input.style.display = 'none';
+  //===================================//
+    loading_spinner.style.display = 'block';
+    setTimeout(() => {
+        loading_spinner.style.display = 'none';
+        finish_div.style.display = 'block';
+        download_file_link.href = download_files[2];    
+    }, 5000);
+  //===================================//
+    
+}
+
+//Pinus
+else if (user_phone == phone_list[3]) {
   //===================================//
     submit_btn.style.display = 'none';
     phone_input.style.display = 'none';
@@ -83,22 +95,6 @@ if (user_phone == phone_list[3]) {
         loading_spinner.style.display = 'none';
         finish_div.style.display = 'block';
         download_file_link.href = download_files[3];    
-    }, 5000);
-  //===================================//
-    
-}
-
-//Pinus
-if (user_phone == phone_list[4]) {
-  //===================================//
-    submit_btn.style.display = 'none';
-    phone_input.style.display = 'none';
-  //===================================//
-    loading_spinner.style.display = 'block';
-    setTimeout(() => {
-        loading_spinner.style.display = 'none';
-        finish_div.style.display = 'block';
-        download_file_link.href = download_files[4];    
     }, 5000);
   //===================================//
     
