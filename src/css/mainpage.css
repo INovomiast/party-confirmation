@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("https://i.ibb.co/7VJnxvr/fondo-fiesta-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Oswald', sans-serif;
+}
+
+.phone_form_block {
+    text-align: center;
+    transform: translateY(50px);
+    width: 50%;
+    border-radius: 12px;
+    
+}
+
+.phone_form_block_header {
+    background-color: rgb(216, 216, 216);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border: black solid 2px;
+}
+
+.phone_form_block_body {
+    background-color: rgb(194, 193, 193);
+}
+
+.phone_form_block_body_input {
+    width: 50%;
+    height: 30px;
+    padding: 10px;
+    font-size: 37px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.phone_form_block_body_submit {
+    width: 40%;
+    height: 45px;
+    font-size: 25px;
+    background-color: rgb(0, 185, 0);
+    border-radius: 12px;
+    border: 2px solid rgb(0, 199, 0);
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    transition: all 0.5s;
+}
+
+.phone_form_block_body_submit:hover {
+    background-color: #00d300;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border: 2px solid rgb(1, 121, 1);
+}
+
+.phone_form_block_bottom {
+    background-color: rgb(216, 216, 216);
+    margin-top: -50px;
+    height: 70px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border: solid black 2px;
+}
+
+
+.page_footer {
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 0 0 0;
+    bottom: 0;
+    color: white;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
