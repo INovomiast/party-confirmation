@@ -31,7 +31,7 @@ submit_btn.addEventListener('click', () => {
             phone_input.style.backgroundColor = "white";
         }, 2000);
     }if (phone_list.includes(phone_input.value)) {
-        window.location.href = "./index.html?user-phone=" + phone_input.value;
+        window.location.href = "./?user-phone=" + phone_input.value;
     }
 });
 
