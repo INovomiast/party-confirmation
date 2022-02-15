@@ -6,7 +6,7 @@ const user_phone = urlParams.get('user-phone');
 // Components
 const submit_btn = document.getElementById('phone_form_block_body_submit');
 const phone_input = document.getElementById('phone_form_block_body_input');
-const phone_list = ['684331123', '603345202', '621002746', '696393392', '603330343', '655720109', '648419497', '643020348', '635967638'];
+const phone_list = ['684331123', '603345202', '621002746', '696393392', '603330343', '655720109', '648419497', '643020348', '635967638', '654669801', '600223016'];
 
 
 
@@ -17,7 +17,7 @@ const loading_spinner = document.getElementById('loading_spinner');
 const finish_div = document.getElementById('finish_btn_div');
 
 //Download Invitation
-const download_files = ['https://inovomiast.000webhostapp.com/user/inovomiast/cdn/private/invitaciones/Invitacion%20-%20Ruben%20-%20Cumplea%c3%b1os%20Dimitri.pdf', 'https://inovomiast.000webhostapp.com/user/inovomiast/cdn/private/invitaciones/Invitacion%20-%20Raquel%20-%20Cumplea%c3%b1os%20Dimitri.pdf', 'https://inovomiast.000webhostapp.com/user/inovomiast/cdn/private/invitaciones/Invitaci%c3%b3n%20-%20Borys%20-%20Cumplea%c3%b1os%20Dimitri.pdf', 'https://inovomiast.000webhostapp.com/user/inovomiast/cdn/private/invitaciones/Invitaci%c3%b3n%20-%20Alejandro%20Pino%20-%20Cumplea%c3%b1os%20Dimitri.pdf', 'https://inovomiast.000webhostapp.com/user/inovomiast/cdn/private/invitaciones/Invitaci%c3%b3n%20-%20Leonardo%20-%20Cumplea%c3%b1os%20Dimitri.pdf', 'https://inovomiast.000webhostapp.com/user/inovomiast/cdn/private/invitaciones/Invitaci%c3%b3n%20-%20Leticia%20-%20Cumplea%c3%b1os%20Dimitri.pdf', 'https://inovomiast.000webhostapp.com/user/inovomiast/cdn/private/invitaciones/Invitaci%c3%b3n%20-%20Marcos%20-%20Cumplea%c3%b1os%20Dimitri.pdf', 'https://inovomiast.000webhostapp.com/user/inovomiast/cdn/private/invitaciones/Invitacion%20-%20Sergio%20Marian%20-%20Cumplea%c3%b1os%20Dimitri.pdf', 'https://inovomiast.000webhostapp.com/user/inovomiast/cdn/private/invitaciones/Invitaci%c3%b3n%20-%20Aaron%20-%20.pdf']
+const download_files = ['https://inovomiast.000webhostapp.com/user/inovomiast/cdn/private/invitaciones/Invitacion%20-%20Ruben%20-%20Cumplea%c3%b1os%20Dimitri.pdf', 'https://inovomiast.000webhostapp.com/user/inovomiast/cdn/private/invitaciones/Invitacion%20-%20Raquel%20-%20Cumplea%c3%b1os%20Dimitri.pdf', 'https://inovomiast.000webhostapp.com/user/inovomiast/cdn/private/invitaciones/Invitaci%c3%b3n%20-%20Borys%20-%20Cumplea%c3%b1os%20Dimitri.pdf', 'https://inovomiast.000webhostapp.com/user/inovomiast/cdn/private/invitaciones/Invitaci%c3%b3n%20-%20Alejandro%20Pino%20-%20Cumplea%c3%b1os%20Dimitri.pdf', 'https://inovomiast.000webhostapp.com/user/inovomiast/cdn/private/invitaciones/Invitaci%c3%b3n%20-%20Leonardo%20-%20Cumplea%c3%b1os%20Dimitri.pdf', 'https://inovomiast.000webhostapp.com/user/inovomiast/cdn/private/invitaciones/Invitaci%c3%b3n%20-%20Leticia%20-%20Cumplea%c3%b1os%20Dimitri.pdf', 'https://inovomiast.000webhostapp.com/user/inovomiast/cdn/private/invitaciones/Invitaci%c3%b3n%20-%20Marcos%20-%20Cumplea%c3%b1os%20Dimitri.pdf', 'https://inovomiast.000webhostapp.com/user/inovomiast/cdn/private/invitaciones/Invitacion%20-%20Sergio%20Marian%20-%20Cumplea%c3%b1os%20Dimitri.pdf', 'https://inovomiast.000webhostapp.com/user/inovomiast/cdn/private/invitaciones/Invitaci%c3%b3n%20-%20Aaron%20-%20.pdf', 'https://inovomiast.000webhostapp.com/user/inovomiast/cdn/private/invitaciones/Invitacion%20-%20Sofia%20-%20Cumplea%c3%b1os%20Dimitri.pdf', 'https://inovomiast.000webhostapp.com/user/inovomiast/cdn/private/invitaciones/Invitacion%20-%20Lucia%20-%20Cumplea%c3%b1os%20Dimitri.pdf']
 const download_file_link = document.getElementById('download_file_link');
 
 
@@ -175,6 +175,38 @@ else if (user_phone == phone_list[8]) {
         loading_spinner.style.display = 'none';
         finish_div.style.display = 'block';
         download_file_link.href = download_files[8];    
+    }, 5000);
+  //===================================//
+    
+}
+
+//Sofia
+else if (user_phone == phone_list[9]) {
+  //===================================//
+    submit_btn.style.display = 'none';
+    phone_input.style.display = 'none';
+  //===================================//
+    loading_spinner.style.display = 'block';
+    setTimeout(() => {
+        loading_spinner.style.display = 'none';
+        finish_div.style.display = 'block';
+        download_file_link.href = download_files[9];    
+    }, 5000);
+  //===================================//
+    
+}
+
+//Lucia
+else if (user_phone == phone_list[10]) {
+  //===================================//
+    submit_btn.style.display = 'none';
+    phone_input.style.display = 'none';
+  //===================================//
+    loading_spinner.style.display = 'block';
+    setTimeout(() => {
+        loading_spinner.style.display = 'none';
+        finish_div.style.display = 'block';
+        download_file_link.href = download_files[10];    
     }, 5000);
   //===================================//
     

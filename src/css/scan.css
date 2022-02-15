@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("https://i.ibb.co/7VJnxvr/fondo-fiesta-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Oswald', sans-serif;
+}
+
+.info-block {
+    
+}
